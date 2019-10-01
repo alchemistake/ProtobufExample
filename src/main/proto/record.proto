@@ -1,0 +1,12 @@
+syntax = "proto2";
+option java_outer_classname = "Protobuf";
+option java_package = "main.java";
+
+message Record {
+    required string name = 1;
+    required int64 id = 2;
+}
+
+message RecordStore {
+    repeated Record record = 1;
+}
